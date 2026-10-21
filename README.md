@@ -17,22 +17,6 @@ A life-sized Persian carpet, woven from the words of Omar Khayyam's *Rubaiyat*, 
 
 The bottom dock has the Raj slider, daylight and sunset lighting, and camera views (overview, medallion, corner, border, fringes, reverse).
 
-## Run it locally
-
-Requires [Node.js](https://nodejs.org) 18 or newer.
-
-```bash
-npm install
-npm run dev
-```
-
-Then open the address Vite prints, usually http://localhost:5173.
-
-```bash
-npm run build      # production build into dist/
-npm run preview    # serve the production build locally
-npm run snapshot   # refresh the bundled quatrains from Ganjoor
-```
 
 ## Deploy
 
