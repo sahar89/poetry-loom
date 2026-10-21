@@ -1,0 +1,3 @@
+# Ganjoor, fetched server-side through Netlify so the browser never makes a
+# cross-site request. The app calls /api/ganjoor/... on its own domain.
+/api/ganjoor/*  https://api.ganjoor.net/api/ganjoor/:splat  200!

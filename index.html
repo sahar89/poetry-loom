@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Poetry Loom</title>
+    <meta name="description" content="A wool and silk Persian carpet knotted from the words of Omar Khayyam's Rubaiyat." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="stage"></div>
+
+    <header class="masthead">
+      <div class="wordmark">Poetry Loom</div>
+      <div class="attribution">
+        <span>Rubaiyat of Omar Khayyam</span>
+        <span class="sep">·</span>
+        <a href="https://ganjoor.net/khayyam/robaee" target="_blank" rel="noopener">verses from Ganjoor</a>
+        <span class="source-dot" id="sourceDot" title=""></span>
+      </div>
+    </header>
+
+    <div class="loader" id="loader">
+      <div class="loader-word" dir="rtl" lang="fa">خیام</div>
+      <div class="loader-text" id="loaderText">Gathering quatrains from Ganjoor</div>
+    </div>
+
+    <nav class="dock" id="dock" aria-label="Carpet controls">
+      <button class="dock-toggle" id="dockToggle" aria-expanded="true" aria-label="Collapse controls">
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="dock-tabs" role="tablist">
+        <button role="tab" class="tab active" data-panel="weave" aria-selected="true">Weave</button>
+        <button role="tab" class="tab" data-panel="light" aria-selected="false">Light</button>
+        <button role="tab" class="tab" data-panel="view" aria-selected="false">View</button>
+        <button class="tab zen" id="zenBtn" title="Zen mode (Z)">Zen</button>
+      </div>
+      <div class="dock-panels">
+        <section class="panel active" data-panel="weave" role="tabpanel">
+          <label class="raj">
+            <span class="label">Raj</span>
+            <input type="range" id="rajSlider" min="40" max="100" step="1" value="70" />
+            <output id="rajValue" class="num">70</output>
+          </label>
+          <div class="stats num" id="weaveStats"></div>
+        </section>
+        <section class="panel" data-panel="light" role="tabpanel">
+          <div class="segmented" id="lightSeg">
+            <button data-light="day" class="active">Daylight</button>
+            <button data-light="sunset">Golden sunset</button>
+          </div>
+        </section>
+        <section class="panel" data-panel="view" role="tabpanel">
+          <div class="presets" id="presets">
+            <button data-view="overview">Overview</button>
+            <button data-view="medallion">Medallion</button>
+            <button data-view="corner">Corner spandrel</button>
+            <button data-view="border">Main border</button>
+            <button data-view="fringes">Fringes</button>
+            <button data-view="reverse">Reverse</button>
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <button class="zen-exit" id="zenExit" aria-label="Exit Zen mode">Exit Zen</button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
