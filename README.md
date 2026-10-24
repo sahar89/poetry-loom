@@ -18,14 +18,10 @@ A life-sized Persian carpet, woven from the words of Omar Khayyam's *Rubaiyat*, 
 The bottom dock has the Raj slider, daylight and sunset lighting, and camera views (overview, medallion, corner, border, fringes, reverse).
 
 
-## Deploy
-
-The site is static, so any static host works. It is set up for [Netlify](https://www.netlify.com):
-
 
 ## Credits
 
 - Poetry: Omar Khayyam, *Rubaiyat*, text from [Ganjoor](https://ganjoor.net).
 - Environment lighting: "Historic Cloister Passage" by Elvis Posa, from [Poly Haven](https://polyhaven.com), CC0.
-- Fonts: [Amiri](https://fonts.google.com/specimen/Amiri), [Fraunces](https://fonts.google.com/specimen/Fraunces) and [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans), via Google Fonts.
+- Fonts: [Amiri](https://fonts.google.com/specimen/Amiri) via Google Fonts.
 - Built with [Three.js](https://threejs.org) and [Vite](https://vitejs.dev).
